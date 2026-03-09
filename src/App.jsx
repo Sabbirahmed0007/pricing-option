@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './Conponents/Navbar/Navbar'
 import NavbarRaw from './Conponents/NavbarRaw/NavbarRaw'
 import PricingOptions from './Conponents/PricingOptions/PricingOptions'
+import ResultsChart from './Conponents/ResultChart/ResultsChart'
 
 
 const menuJson = async () => {
@@ -42,6 +43,10 @@ function App() {
           <Suspense fallback={<span className="loading loading-bars loading-xl text-center my-48" ></span>}>
             <PricingOptions membershipPromise={membershipPromise}></PricingOptions>
           </Suspense>
+        </div>
+
+        <div className='text-center flex items-center justify-center'>
+          <ResultsChart></ResultsChart>
         </div>
         
 
