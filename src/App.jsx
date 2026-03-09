@@ -6,6 +6,8 @@ import Navbar from './Conponents/Navbar/Navbar'
 import NavbarRaw from './Conponents/NavbarRaw/NavbarRaw'
 import PricingOptions from './Conponents/PricingOptions/PricingOptions'
 import ResultsChart from './Conponents/ResultChart/ResultsChart'
+import axios from 'axios';
+import MarksChart from './Conponents/MarksChart/MarksChart'
 
 
 const menuJson = async () => {
@@ -23,6 +25,11 @@ const MembershipsJson = async () => {
 }
 
 const membershipPromise = MembershipsJson();
+
+
+// Marks promise 
+
+const marksPromise = axios.get(`/marksData.json`);
 
 function App() {
   
@@ -47,6 +54,12 @@ function App() {
 
         <div className='text-center flex items-center justify-center'>
           <ResultsChart></ResultsChart>
+        </div>
+
+        <div>
+          <Suspense fallback={<span className="loading loading-bars loading-xl text-center my-48" ></span>}>
+            <MarksChart marksPromise={marksPromise}></MarksChart>
+          </Suspense>
         </div>
         
 

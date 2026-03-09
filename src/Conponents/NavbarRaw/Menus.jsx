@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Menus = ({ menu }) => {
-    console.log(menu);
+    // console.log(menu);
     
     return (
         <div>
