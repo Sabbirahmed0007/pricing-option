@@ -2,15 +2,8 @@ import React, { use, useState } from 'react';
 import Menus from './Menus';
 import { Menu, X } from 'lucide-react';
 
-const menuJson = async () => {
-    const response = await fetch(`/menu.json`);
 
-    return response.json();
-}
-
-const menuPromise = menuJson();
-
-const NavbarRaw = () => {
+const NavbarRaw = ({menuPromise}) => {
 
     const [openMenu, setOpneMenu] = useState(false);
 
@@ -30,7 +23,7 @@ const NavbarRaw = () => {
                 </ul>
 
             </span>
-            <h1>My Logo</h1>
+            <h1 className='text-2xl lg:text-4xl font-bold'>GYmmY</h1>
            
             <ul className='  items-center justify-around gap-4 hidden lg:flex'>
                 {links}

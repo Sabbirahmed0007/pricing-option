@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "plan": "Basic",
+    "price": 20,
+    "duration": "per month",
+    "popularity": "Moderate",
+    "description": "Perfect for beginners who want access to essential gym facilities.",
+    "features": [
+      "Access to gym equipment",
+      "Locker room access",
+      "Free Wi-Fi",
+      "1 fitness assessment per month",
+      "Access during standard hours",
+      "Drinking water facility",
+      "Beginner workout guidance",
+      "Access to stretching area"
+    ]
+  },
+  {
+    "id": 2,
+    "plan": "Standard",
+    "price": 35,
+    "duration": "per month",
+    "popularity": "Most Popular",
+    "description": "Ideal for regular gym-goers who want extra support and group classes.",
+    "features": [
+      "All Basic plan features",
+      "Access to group fitness classes",
+      "Personalized workout plan",
+      "2 fitness assessments per month",
+      "Sauna access",
+      "Body composition analysis",
+      "Access to cardio training zone",
+      "Guest pass (1 per month)",
+      "Free fitness workshops"
+    ]
+  },
+  {
+    "id": 3,
+    "plan": "Premium",
+    "price": 50,
+    "duration": "per month",
+    "popularity": "High",
+    "description": "Best for people who want full gym benefits and personal training support.",
+    "features": [
+      "All Standard plan features",
+      "Unlimited group classes",
+      "1 personal training session per week",
+      "Diet and nutrition consultation",
+      "Access to swimming pool",
+      "Priority booking for classes",
+      "Progress tracking report",
+      "Access to recovery lounge",
+      "Exclusive fitness challenges"
+    ]
+  },
+  {
+    "id": 4,
+    "plan": "Elite",
+    "price": 75,
+    "duration": "per month",
+    "popularity": "VIP Choice",
+    "description": "Complete VIP fitness experience with premium facilities.",
+    "features": [
+      "All Premium plan features",
+      "Unlimited personal training sessions",
+      "Priority booking for classes",
+      "Access to spa and massage",
+      "24/7 gym access",
+      "Private locker",
+      "Dedicated fitness coach",
+      "Free gym merchandise",
+      "VIP lounge access",
+      "Monthly wellness check-up"
+    ]
+  }
+]
